@@ -1,0 +1,19 @@
+Script started on 2024-07-08 16:09:07+0300
+]0;mlind@LAPTOP: /mnt/c/part12[01;32mmlind@LAPTOP[00m:[01;34m/mnt/c/part12[00m$ docker container run -it ubuntu bash
+[?2004h]0;root@b1c32d596a3d: /root@b1c32d596a3d:/# ls [7m/usr/src/[27m    
+[?2004l
+[0m[01;34mbin[0m  [01;34mgames[0m  [01;34minclude[0m  [01;34mlib[0m  [01;34mlib64[0m  [01;34mlibexec[0m  [01;34mlocal[0m  [01;34msbin[0m  [01;34mshare[0m  [01;34msrc[0m
+[?2004h]0;root@b1c32d596a3d: /root@b1c32d596a3d:/# mkdir /usr/     [7m/usr/src/[27m/usr/src/app
+[?2004l
+[?2004h]0;root@b1c32d596a3d: /root@b1c32d596a3d:/# touch [7m/usr/src/app/index.js[27m/usr/src/app/index.js
+[?2004l
+[?2004h]0;root@b1c32d596a3d: /root@b1c32d596a3d:/# [Kls /usr/src/app/
+[?2004l
+index.js
+[?2004h]0;root@b1c32d596a3d: /root@b1c32d596a3d:/# exit  
+[?2004l
+exit
+]0;mlind@LAPTOP: /mnt/c/part12[01;32mmlind@LAPTOP[00m:[01;34m/mnt/c/part12[00m$ exit
+exit
+
+Script done on 2024-07-08 16:23:03+0300
