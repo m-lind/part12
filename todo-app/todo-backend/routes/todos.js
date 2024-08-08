@@ -17,7 +17,7 @@ router.post('/', async (req, res) => {
   })
 
   const todoCurrentCounter = await getAsync('added_todos');
-  const todoCounterInc = todoCurrentCounter ? parseInt(todoCurrentCounter) + 1 : 1;
+  const todoCounterInc = todoCurrentCounter ? Number(todoCurrentCounter) + 1 : 1;
   await setAsync('added_todos', todoCounterInc)
   
   res.send(todo);
@@ -25,7 +25,7 @@ router.post('/', async (req, res) => {
 
 router.get('/statistics', async (_req, res) => {
   const todoCurrentCounter = await getAsync('added_todos')
-  res.json({added_todos: parseInt(todoCurrentCounter) || 0})
+  res.json({added_todos: Number(todoCurrentCounter) || 0})
 })
 
 const singleRouter = express.Router();
