@@ -5,8 +5,6 @@ services:
       - ./todo-frontend/:/usr/src/app
     environment:
       - VITE_BACKEND_URL=http://localhost:8080/api/
-    ports:
-      - 5173:5173
     container_name: hello-front-dev
   mongo:
     image: mongo
@@ -33,8 +31,6 @@ services:
     environment:
       - REDIS_URL=redis://redis:6379
       - MONGO_URL=mongodb://the_username:the_password@mongo:27017/the_database
-    ports:
-      - 3000:3000
     container_name: hello-back-dev
     depends_on:
       - mongo
